@@ -34,13 +34,26 @@ nav {
   }
 }
 
-input {
-  width: 265px;
-  height: 41px;
-  margin-right: 14px;
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #000000;
   border-radius: 20px;
-  text-align: right;
+  width: 265px;
+  margin-right: 10px;
+
+  i {
+    margin-left: 10px;
+  }
+
+  input {
+    width: 265px;
+    height: 41px;
+    text-align: right;
+    border: none;
+    border-radius: 20px;
+  }
 }
 
 i {

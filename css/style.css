@@ -48,13 +48,32 @@ nav ul li:last-child {
   margin: 0 0 0 18px;
 }
 
-input {
-  width: 265px;
-  height: 41px;
-  margin-right: 14px;
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 1px solid #000000;
   border-radius: 20px;
+  width: 265px;
+  margin-right: 10px;
+}
+
+.search i {
+  margin-left: 10px;
+}
+
+.search input {
+  width: 265px;
+  height: 41px;
   text-align: right;
+  border: none;
+  border-radius: 20px;
 }
 
 i {
