@@ -244,7 +244,7 @@ footer {
   text-transform: uppercase;
 }
 
-ul p {
+.sitemap p {
   font-weight: bold;
   font-size: 20px;
   line-height: 23px;
@@ -252,7 +252,7 @@ ul p {
   margin-bottom: 20px;
 }
 
-ul li {
+.sitemap li {
   list-style: none;
   margin: 10px 0;
 }
@@ -270,6 +270,11 @@ ul li {
 
 .pago p {
   text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .pago img {
@@ -294,7 +299,11 @@ ul li {
 }
 
 .contact p {
-  margin-bottom: 0px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
 }
 
 .contact li {
@@ -307,6 +316,17 @@ ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact li i {
+  margin-right: 10px;
+}
+
+.contact li span {
+  font-size: 20px;
+  line-height: 23px;
+  min-width: 160px;
 }
 
 * {
