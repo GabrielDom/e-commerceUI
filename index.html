@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Tienda</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <p>Logo</p>
+        <ul>
+          <li>Remeras</li>
+          <li>Buzos</li>
+          <li>Gorros</li>
+          <li>Contacto</li>
+        </ul>
+        <input type="search" placeholder="Buscar" />
+        <i class="material-icons">person</i>
+        <i class="material-icons">shopping_cart</i>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="carousel">
+        <input type="radio" id="carousel-1" name="carousel[]" checked />
+        <input type="radio" id="carousel-2" name="carousel[]" />
+        <input type="radio" id="carousel-3" name="carousel[]" />
+        <ul class="carousel__items">
+          <li class="carousel__item">
+            <img src="/assets/slide1.jpeg" alt="" />
+          </li>
+          <li class="carousel__item">
+            <img src="/assets/slide2.jpeg" alt="" />
+          </li>
+          <li class="carousel__item">
+            <img src="/assets/slide3.jpeg" alt="" />
+          </li>
+        </ul>
+        <div class="carousel__prev">
+          <label for="carousel-1"></label>
+          <label for="carousel-2"></label>
+          <label for="carousel-3"></label>
+        </div>
+        <div class="carousel__next">
+          <label for="carousel-1"></label>
+          <label for="carousel-2"></label>
+          <label for="carousel-3"></label>
+        </div>
+        <div class="carousel__nav">
+          <label for="carousel-1"></label>
+          <label for="carousel-2"></label>
+          <label for="carousel-3"></label>
+        </div>
+      </div>
+    </div>
+    <div class="destacados">
+      <h2>Destacados</h2>
+      <div class="images">
+        <div class="card">
+          <img src="./assets/shirt1.jpeg" alt="" />
+          <p>Remera roja</p>
+          <p class="price">$250</p>
+        </div>
+        <div class="card">
+          <img src="./assets/shirt2.jpeg" alt="" />
+          <p>Remera blanca</p>
+          <p class="price">$200</p>
+        </div>
+        <div class="card">
+          <img src="./assets/shirt3.jpeg" alt="" />
+          <p>Remera azul</p>
+          <p class="price">$250</p>
+        </div>
+      </div>
+      <button>Ver más</button>
+    </div>
+    <div class="newsletter">
+      <h3>SUSCRIBITE A NUESTRO NEWSLETTER</h3>
+      <h4>Y enterate de todas las novedades</h4>
+      <div class="suscribe">
+        <input type="submit" value="" />
+        <button>Enviar</button>
+      </div>
+    </div>
+    <footer>
+      <p class="logo">Logo</p>
+      <ul class="sitemap">
+        <p>Mapa del sitio</p>
+        <li>Remeras</li>
+        <li>Buzos</li>
+        <li>Gorros</li>
+        <li>Politicas de privacidad</li>
+      </ul>
+      <ul class="pago">
+        <p>Medios de pago</p>
+        <img src="./assets/mediosdepago.jpeg" alt="" />
+      </ul>
+      <ul class="contact">
+        <p>Contacto</p>
+        <li><i class="material-icons">email</i>info@logo.com.ar</li>
+        <li><i class="material-icons">photo_camera</i>/logoremeras</li>
+        <li><i class="material-icons">phone</i>1123111111</li>
+      </ul>
+    </footer>
+  </body>
+</html>

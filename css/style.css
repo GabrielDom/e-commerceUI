@@ -1,0 +1,465 @@
+header {
+  -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 118px;
+}
+
+nav p {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 47px;
+  text-transform: uppercase;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+  margin-left: 4px;
+}
+
+nav ul li {
+  list-style: none;
+  font-size: 20px;
+  line-height: 23px;
+  margin: 0 18px 0 18px;
+}
+
+nav ul li:last-child {
+  margin: 0 0 0 18px;
+}
+
+input {
+  width: 265px;
+  height: 41px;
+  margin-right: 14px;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  text-align: right;
+}
+
+i {
+  margin-right: 22px;
+}
+
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__prev > label:nth-child(3), .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__next > label:nth-child(2), .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__prev > label:nth-child(1), .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__next > label:nth-child(3), .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__prev > label:nth-child(2), .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__next > label:nth-child(1) {
+  opacity: 1 !important;
+  z-index: 3;
+}
+
+.container {
+  width: 900px;
+  min-width: 900px;
+  margin: 0 auto;
+}
+
+.carousel {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel > input[type="radio"] {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  top: 0;
+}
+
+.carousel > input[type="radio"]:checked ~ .carousel__items .carousel__item,
+.carousel > input[type="radio"]:checked ~ .carousel__prev > label,
+.carousel > input[type="radio"]:checked ~ .carousel__next > label {
+  opacity: 0;
+}
+
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(1) {
+  opacity: 1;
+}
+
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__nav > label:nth-child(1) {
+  background: #ccc;
+  cursor: default;
+  pointer-events: none;
+}
+
+.carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(2) {
+  opacity: 1;
+}
+
+.carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__nav > label:nth-child(2) {
+  background: #ccc;
+  cursor: default;
+  pointer-events: none;
+}
+
+.carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(3) {
+  opacity: 1;
+}
+
+.carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__nav > label:nth-child(3) {
+  background: #ccc;
+  cursor: default;
+  pointer-events: none;
+}
+
+.carousel__items {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+.carousel__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+  margin: 0;
+}
+
+.carousel__item img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.carousel__prev > label, .carousel__next > label {
+  cursor: pointer;
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  opacity: 0;
+  z-index: 2;
+}
+
+.carousel__prev > label:hover, .carousel__prev > label:focus, .carousel__next > label:hover, .carousel__next > label:focus {
+  opacity: 0.5 !important;
+}
+
+.carousel__prev > label:before, .carousel__prev > label:after, .carousel__next > label:before, .carousel__next > label:after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+
+.carousel__prev > label:before, .carousel__next > label:before {
+  background: -webkit-gradient(linear, left bottom, left top, from(#fff), color-stop(10%, #fff), color-stop(10%, rgba(51, 51, 51, 0))), -webkit-gradient(linear, right top, left top, from(#fff), color-stop(10%, #fff), color-stop(10%, rgba(51, 51, 51, 0)));
+  background: linear-gradient(to top, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%), linear-gradient(to left, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
+  width: 60%;
+  height: 60%;
+  top: 20%;
+}
+
+.carousel__prev > label {
+  left: 2%;
+}
+
+.carousel__prev > label:before {
+  left: 35%;
+  top: 20%;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.carousel__next > label {
+  right: 2%;
+}
+
+.carousel__next > label:before {
+  left: 10%;
+  transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
+}
+
+.carousel__nav {
+  position: absolute;
+  bottom: 3%;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 3;
+}
+
+.carousel__nav > label {
+  border: 1px solid #fff;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 0.125%;
+  width: 10px;
+  height: 10px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 148px auto 0 auto;
+  height: 268px;
+  -webkit-box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+}
+
+ul p {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.pago {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pago p {
+  text-align: center;
+}
+
+.pago img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact p {
+  margin-bottom: 0px;
+}
+
+.contact li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.destacados {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 60px auto 0 auto;
+}
+
+.destacados h2 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 47px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 39px;
+}
+
+.destacados button {
+  background: #dcad81;
+  border-radius: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  margin: 118px auto 0 auto;
+  width: 196px;
+  height: 56px;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 27px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease all;
+  transition: 0.4s ease all;
+}
+
+.destacados button:hover {
+  background: white;
+  color: #dcad81;
+}
+
+.images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.images .card {
+  -webkit-transition: 0.4s ease all;
+  transition: 0.4s ease all;
+  cursor: pointer;
+}
+
+.images .card:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.4s ease all;
+  transition: 0.4s ease all;
+}
+
+.images .card img {
+  width: 245px;
+  height: 260px;
+  margin: 0 auto 25px auto;
+  -webkit-box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.25);
+}
+
+.images .card p {
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.newsletter h3 {
+  text-align: center;
+  margin-top: 160px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.04em;
+}
+
+.newsletter h4 {
+  text-align: center;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 36px;
+}
+
+.newsletter .suscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.newsletter .suscribe input {
+  width: 424px;
+  height: 56px;
+}
+
+.newsletter .suscribe button {
+  background: #dcad81;
+  border-radius: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  width: 128px;
+  height: 56px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease all;
+  transition: 0.4s ease all;
+}
+
+.newsletter .suscribe button:hover {
+  background: white;
+  color: #dcad81;
+}
+/*# sourceMappingURL=style.css.map */
