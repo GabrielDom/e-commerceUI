@@ -48,7 +48,7 @@ nav ul li:last-child {
   margin: 0 0 0 18px;
 }
 
-.search {
+nav .search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,11 +64,11 @@ nav ul li:last-child {
   margin-right: 10px;
 }
 
-.search i {
+nav .search i {
   margin-left: 10px;
 }
 
-.search input {
+nav .search input {
   width: 265px;
   height: 41px;
   text-align: right;
@@ -476,8 +476,11 @@ body {
 }
 
 .newsletter .suscribe input {
+  border: 1px solid #000000;
+  border-radius: 20px;
   width: 424px;
   height: 56px;
+  margin-right: 10px;
 }
 
 .newsletter .suscribe button {

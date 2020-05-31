@@ -32,27 +32,26 @@ nav {
       margin: 0 0 0 18px;
     }
   }
-}
-
-.search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #000000;
-  border-radius: 20px;
-  width: 265px;
-  margin-right: 10px;
-
-  i {
-    margin-left: 10px;
-  }
-
-  input {
-    width: 265px;
-    height: 41px;
-    text-align: right;
-    border: none;
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
     border-radius: 20px;
+    width: 265px;
+    margin-right: 10px;
+
+    i {
+      margin-left: 10px;
+    }
+
+    input {
+      width: 265px;
+      height: 41px;
+      text-align: right;
+      border: none;
+      border-radius: 20px;
+    }
   }
 }
 
